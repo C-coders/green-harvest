@@ -1,18 +1,18 @@
 :root {
     --font-family: 'Roboto', sans-serif;
     --second-family: 'Raleway', sans-serif;
-    --iris: #4d5ae5;
+    --white: #fff;
     --ocean: #404bbf;
     --navy-blue: #2e2f42;
     --green: #31d0aa;
     --slate: #434455;
+    --dairy: #fcfcfc;
     --light-slate: #8e8f99;
     --cornflower: #e7e9fc;
     --cloud: #f4f4fd;
     --navy-blue-modal: rgba(46, 47, 66, 0.4);
     --grey: rgba(46, 47, 66, 0.7);
-    --white: #fff;
-    --dairy: #fcfcfc;
+    --iris: #4d5ae5;
 }
 
 
@@ -32,13 +32,26 @@ p {
     margin: 0;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+.container {
+    max-width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 ul,
@@ -56,16 +69,15 @@ body {
 
 .btn {
     font-family: var(--font-family);
+    color: var(--white);
+    background-color: var(--iris);
+    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--white);
-    background-color: var(--iris);
-
     min-width: 169px;
     height: 56px;
-    cursor: pointer;
     display: block;
     padding: 16px 32px;
     border-radius: 4px;
@@ -77,18 +89,6 @@ body {
     background-color: var(--ocean);
 }
 
-.container {
-    max-width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 
 /* --------------------------------------------------------header section------------------------------------------------------- */
 
@@ -112,22 +112,19 @@ section {
 }
 
 .logo1 {
+    color: var(--iris);
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 18px;
     line-height: 1.17;
+    font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--iris);
 }
 
 .navbar .logo2 {
     color: var(--navy-blue);
 }
 
-.footer .logo2 {
-    color: var(--cloud);
-}
 
 .navbar-menu {
     display: flex;
@@ -136,12 +133,11 @@ section {
 
 .nav-link {
     font-family: var(--font-family);
+    color: var(--navy-blue);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
-
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -158,12 +154,11 @@ section {
 
 .contact-tab-link {
     font-family: var(--font-family);
+    color: var(--slate);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate);
-
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -185,12 +180,11 @@ section {
 }
 
 .hero-title {
+    color: var(--white);
+    text-align: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: var(--white);
-    text-align: center;
-
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
@@ -204,12 +198,11 @@ section {
 
 
 .features-title {
+    color: var(--navy-blue);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
-
     margin-bottom: 8px;
 }
 
@@ -219,12 +212,17 @@ section {
 }
 
 .features-text {
+    color: var(--slate);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate);
-
     width: 264px;
+}
+
+.features-tab {
+    flex-shrink: 0;
+    flex-basis: 360;
+    position: relative;
 }
 
 /* --------------------------------------------------------team section------------------------------------------------------- */
@@ -235,13 +233,12 @@ section {
 }
 
 .team-title {
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
     color: var(--navy-blue);
     text-align: center;
     text-transform: capitalize;
-
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
     margin-bottom: 72px;
 }
 
@@ -253,6 +250,9 @@ section {
 .team-tab {
     background-color: var(--white);
     border-radius: 0 0 4px 4px;
+    flex-shrink: 0;
+    flex-basis: 360;
+    position: relative;
 }
 
 .team-info {
@@ -261,33 +261,31 @@ section {
 }
 
 .team-name {
+    color: var(--navy-blue);
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
-
-    margin-bottom: 8px;
 }
 
 .team-text {
+    color: var(--slate);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate);
 }
 
 /* --------------------------------------------------------portfolio section------------------------------------------------------- */
 
 
 .port-title {
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
     color: var(--navy-blue);
     text-align: center;
     text-transform: capitalize;
-
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
     margin-bottom: 72px;
 }
 
@@ -305,20 +303,25 @@ section {
 }
 
 .port-cd-title {
+    color: var(--navy-blue);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
-
     margin-bottom: 8px;
 }
 
 .port-cd-text {
+    color: var(--slate);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate);
+}
+
+.port-tab {
+    flex-shrink: 0;
+    flex-basis: 360;
+    position: relative;
 }
 
 /* --------------------------------------------------------footer section------------------------------------------------------- */
@@ -334,12 +337,15 @@ section {
     margin-bottom: 16px;
 }
 
+.footer .logo2 {
+    color: var(--cloud);
+}
+
 .footer-text {
+    color: var(--cloud);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--cloud);
-
     width: 264px;
 }
 
