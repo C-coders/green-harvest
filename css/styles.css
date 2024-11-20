@@ -111,7 +111,7 @@ body {
     margin-right: 76px;
 }
 
-.logo1 {
+.logo {
     color: var(--iris);
     font-family: var(--second-family);
     font-weight: 700;
@@ -121,7 +121,7 @@ body {
     text-transform: uppercase;
 }
 
-.navbar .logo2 {
+.navbar .stu {
     color: var(--navy-blue);
 }
 
@@ -196,6 +196,18 @@ body {
 
 /* --------------------------------------------------------features section------------------------------------------------------- */
 
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
 
 .features-title {
     color: var(--navy-blue);
@@ -296,7 +308,7 @@ body {
     row-gap: 48px;
 }
 
-.port-inf0 {
+.port-info {
     padding: 32px 16px;
     border: 1px solid var(--cornflower);
     border-top: none;
@@ -332,12 +344,12 @@ body {
     padding: 100px 0px;
 }
 
-.footer .logo1 {
+.footer .logo {
     display: inline-block;
     margin-bottom: 16px;
 }
 
-.footer .logo2 {
+.footer .stu {
     color: var(--cloud);
 }
 
