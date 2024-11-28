@@ -600,27 +600,26 @@ body.modal-open {
 
 /* --------------------------------------------------------modal------------------------------------------------------- */
 
-.backdrop .modal .is-hidden {
+.modal-bg .modal .is-hidden {
     transform: translate(-50%, -50%) scaleY(0);
 }
 
 
-.backdrop {
+.modal-bg {
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--navy-blue);
+    background-color: var(--navy-blue-modal);
     position: fixed;
     z-index: 2;
     overflow: hidden;
     transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
-.modal {
+.modal-container {
     width: 408px;
     padding: 72px 24px 24px 24px;
-    top: 50%;
     top: 50%;
     left: 50%;
     min-height: 584px;
