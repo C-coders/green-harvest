@@ -13,36 +13,112 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
+        <link rel="apple-180x180" sizes="180x180" href="./images/webicon/apple-180x180.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/webicon/webicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/webicon/webicon-16x16.png" />
+        <link rel="manifest" href="./images/webicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body class="modal-open">
     <header class="header">
         <div class="container">
-        <nav class="navbar">
-        <a href="./index.html" class="logo">Web<span class="stu">Studio</span></a>
-             <ul class="navbar-menu">   
-                <li class="navbar-tab">
-                    <a href="#" class="nav-link active">Studio</a>
-                </li>
-                <li class="navbar-tab">
-                    <a href="#" class="nav-link">Portfolio</a>
-                </li>
-                <li class="navbar-tab">
-                    <a href="#" class="nav-link">Contacts</a>
-                </li>  
-             </ul>
-        </nav>
-        <address class="contact">
-            <ul class="contact-menu">
-                <li class="contact-tab">
-                    <a href="mailto:info@devstudio.com" class="contact-tab-link">info@devstudio.com</a>
-                </li>
-                <li class="contact-tab">
-                    <a href="tel:+110001111111" class="contact-tab-link">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
+            <nav class="navbar">
+            <a href="./index.html" class="logo">Web<span class="stu">Studio</span></a>
+                <ul class="navbar-menu">   
+                    <li class="navbar-tab">
+                        <a href="#" class="nav-link active">Studio</a>
+                    </li>
+                    <li class="navbar-tab">
+                        <a href="#" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="navbar-tab">
+                        <a href="#" class="nav-link">Contacts</a>
+                    </li>  
+                </ul>
+            </nav>
+            <address class="contact">
+                <ul class="contact-menu">
+                    <li class="contact-tab">
+                        <a href="mailto:info@devstudio.com" class="contact-tab-link">info@devstudio.com</a>
+                    </li>
+                    <li class="contact-tab">
+                        <a href="tel:+110001111111" class="contact-tab-link">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+
+        <!-----------------------  Mobile   ---------------------->
+
+            <button type="button" class="mob-menu-open" data-open-menu>
+                <svg class="mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="mob-menu-container">
+                    <div class="mob-menu-nav">
+                        <button type="button" class="mob-menu-close" data-close-menu>
+                            <svg class="mob-menu__icon" width="8" height="8">
+                                <use href="./images/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-nav-menu">
+                            <li class="mob-menu-tab">
+                                <a href="index.html" class="mob-menu-link">Studio</a>
+                            </li>
+                            <li class="mob-menu-tab">
+                                <a href="#" class="mob-menu-link">Portfolio</a>
+                            </li>
+                            <li class="mob-menu-tab">
+                                <a href="#" class="mob-menu-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-contact">
+                        <ul class="mob-cont">
+                            <li class="mob-cont-tab">
+                                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            </li>
+                            <li class="mob-cont-tab">
+                                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mob-scm">
+                            <li class="footer-scm-tab">
+                                <a href="" class="footer-scm-link">
+                                    <svg class="footer-scm-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-scm-tab">
+                                <a href="" class="footer-scm-link">
+                                    <svg class="footer-scm-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-scm-tab">
+                                <a href="" class="footer-scm-link">
+                                    <svg class="footer-scm-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-scm-tab">
+                                <a href="" class="footer-scm-link">
+                                    <svg class="footer-scm-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -57,7 +133,7 @@
         </section>
 
 
-        <section class="features">
+        <section class="features section">
             <div class="container">
                 <h2 class="visually-hidden">features</h2>
                 <ul class="features-menu">
@@ -113,168 +189,237 @@
         <section class="team section">
             <div class="container">
                 <h2 class="team-title">Our Team</h2>
-                    <ul class="team-menu">
-                        <li class="team-tab">
-                            <img src="./images/img1.jpg" alt="Mark Guerrero" width="264">
-                            <div class="team-info">
-                                <h3 class="team-name">Mark Guerrero</h3>
-                                <p class="team-text">Product Designer</p>
-                                <ul class="team-scm-menu">
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#linkedin"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="team-tab">
-                            <img src="./images/img2.jpg" alt="Tom Ford" width="264">
-                            <div class="team-info">
-                                <h3 class="team-name">Tom Ford</h3>
-                                <p class="team-text">Developer</p>
-                                <ul class="team-scm-menu">
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#linkedin"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="team-tab">
-                            <img src="./images/img3.jpg" alt="Camila Garcia" width="264">
-                            <div class="team-info">
-                                <h3 class="team-name">Camila Garcia</h3>
-                                <p class="team-text">Marketing</p>
-                                <ul class="team-scm-menu">
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#linkedin"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="team-tab">
-                            <img src="./images/img4.jpg" alt="Daniel Wilson" width="264">
-                            <div class="team-info">
-                                <h3 class="team-name">Daniel Wilson</h3>
-                                <p class="team-text">UI Designer</p>
-                                <ul class="team-scm-menu">
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="team-scm-tab">
-                                        <a href="" class="team-scm-link">
-                                            <svg class="team-scm-icon" width="16" height="16">
-                                                <use href="./images/icons.svg#linkedin"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                <ul class="team-menu">
+                    <li class="team-tab">
+
+                        <picture>
+                            <source srcset="
+                        ./images/desk/1x/img1-desk-1x.jpg 1x,
+                        ./images/desk/2x/img1-desk-2x.jpg 2x
+                        " media="(min-width: 1158px)" />
+                            <source srcset="
+                        ./images/tab/1x/img1-tab-1x.jpg 1x,
+                        ./images/tab/2x/img1-tab-2x.jpg 2x
+                        " media="(min-width: 768px)" />
+                            <source srcset="
+                        ./images/mob/1x/img1-mob-1x.jpg 1x,
+                        ./images/mob/2x/img1-mob-2x.jpg 2x
+                        " media="(max-width: 767px)" />
+                            <img src="./images/desk/1x/img1-desk-1x.jpg" alt="Mark Guerrero" width="264" />
+                        </picture>
+
+                        <div class="team-info">
+                            <h3 class="team-name">Mark Guerrero</h3>
+                            <p class="team-text">Product Designer</p>
+                            <ul class="team-scm-menu">
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-tab">
+
+                        <picture>
+                            <source srcset="
+                        ./images/desk/1x/img2-desk-1x.jpg 1x,
+                        ./images/desk/2x/img2-desk-2x.jpg 2x
+                        " media="(min-width: 1158px)" />
+                            <source srcset="
+                        ./images/tab/1x/img2-tab-1x.jpg 1x,
+                        ./images/tab/2x/img2-tab-2x.jpg 2x
+                        " media="(min-width: 768px)" />
+                            <source srcset="
+                        ./images/mob/1x/img2-mob-1x.jpg 1x,
+                        ./images/mob/2x/img2-mob-2x.jpg 2x
+                        " media="(max-width: 767px)" />
+                            <img src="./images/desk/1x/img2-desk-1x.jpg" alt="Mark Guerrero" width="264" />
+                        </picture>
+
+                        <div class="team-info">
+                            <h3 class="team-name">Tom Ford</h3>
+                            <p class="team-text">Developer</p>
+                            <ul class="team-scm-menu">
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-tab">
+                            <source srcset="
+                        ./images/desk/1x/img3-desk-1x.jpg 1x,
+                        ./images/desk/2x/img3-desk-2x.jpg 2x
+                        " media="(min-width: 1158px)" />
+                            <source srcset="
+                        ./images/tab/1x/img3-tab-1x.jpg 1x,
+                        ./images/tab/2x/img3-tab-2x.jpg 2x
+                        " media="(min-width: 768px)" />
+                            <source srcset="
+                        ./images/mob/1x/img3-mob-1x.jpg 1x,
+                        ./images/mob/2x/img3-mob-2x.jpg 2x
+                        " media="(max-width: 767px)" />
+                            <img src="./images/desk/1x/img3-desk-1x.jpg" alt="Mark Guerrero" width="264" />
+                            </picture>
+                        <div class="team-info">
+                            <h3 class="team-name">Camila Garcia</h3>
+                            <p class="team-text">Marketing</p>
+                            <ul class="team-scm-menu">
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-tab">
+
+                            <source srcset="
+                        ./images/desk/1x/img4-desk-1x.jpg 1x,
+                        ./images/desk/2x/img4-desk-2x.jpg 2x
+                        " media="(min-width: 1158px)" />
+                            <source srcset="
+                        ./images/tab/1x/img4-tab-1x.jpg 1x,
+                        ./images/tab/2x/img4-tab-2x.jpg 2x
+                        " media="(min-width: 768px)" />
+                            <source srcset="
+                        ./images/mob/1x/img4-mob-1x.jpg 1x,
+                        ./images/mob/2x/img4-mob-2x.jpg 2x
+                        " media="(max-width: 767px)" />
+                            <img src="./images/desk/1x/img4-desk-1x.jpg" alt="Mark Guerrero" width="264" />
+                            </picture>
+
+                        <div class="team-info">
+                            <h3 class="team-name">Daniel Wilson</h3>
+                            <p class="team-text">UI Designer</p>
+                            <ul class="team-scm-menu">
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="team-scm-tab">
+                                    <a href="" class="team-scm-link">
+                                        <svg class="team-scm-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>    
         </section>
 
 
 
-        <section class="portfolio">
+        <section class="portfolio section">
             <div class="container">
                 <h2 class="port-title">Our Portfolio</h2>
                 <ul class="port-menu">
                     <li class="port-tab">
                         <div class="port-flow">
-                            <img src="./images/card1.jpg" alt="Banking App" width="360">
+                            <picture>
+                                <source srcset="./images/desk/1x/card1-desk-1x.jpg 1x, ./images/desc/2x/card1-desk-2x.jpg 2x" 
+                                    media="(min-width: 1158px)"/>
+                                <source srcset="./images/tab/1x/card1-tab-1x.jpg 1x, ./images/tab/2x/card1-tab-2x.jpg 2x" 
+                                    media="(min-width: 768px)"/>
+                                <source srcset="./images/mob/1x/card1-mob-1x.jpg 1x, ./images/mob/2x/card1-mob-2x.jpg 2x" 
+                                    media="(max-width: 767px)"/>
+                                <img src="./images/desk/1x/card1-desk-1x.jpg" alt="banking app" width="360"/>
+                            </picture>
+                           
                             <p class="port-flow-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                 Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -287,7 +432,16 @@
                     </li>
                     <li class="port-tab">
                         <div class="port-flow">
-                            <img src="./images/card2.jpg" alt="Cashless Payment" width="360">
+                            <picture>
+                                <source srcset="./images/desk/1x/card2-desk-1x.jpg 1x, ./images/desc/2x/card2-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)"/>
+                                <source srcset="./images/tab/1x/card2-tab-1x.jpg 1x, ./images/tab/2x/card2-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+                                <source srcset="./images/mob/1x/card2-mob-1x.jpg 1x, ./images/mob/2x/card2-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+                                <img src="./images/desk/1x/card2-desk-1x.jpg" alt="banking app" width="360"/>
+                            </picture>
+                            
                             <p class="port-flow-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                 Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -300,7 +454,17 @@
                     </li>
                     <li class="port-tab">
                         <div class="port-flow">
-                            <img src="./images/card3.jpg" alt="Meditaion App" width="360">
+
+                            <picture>
+                                <source srcset="./images/desk/1x/card3-desk-1x.jpg 1x, ./images/desc/2x/card3-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)" />
+                                <source srcset="./images/tab/1x/card3-tab-1x.jpg 1x, ./images/tab/2x/card3-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mob/1x/card3-mob-1x.jpg 1x, ./images/mob/2x/card3-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/desk/1x/card3-desk-1x.jpg" alt="banking app" width="360" />
+                            </picture>
+
                             <p class="port-flow-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                 Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -313,7 +477,17 @@
                     </li>
                     <li class="port-tab">
                         <div class="port-flow">
-                            <img src="./images/card4.jpg" alt="Taxi Service" width="360">
+                            
+                            <picture>
+                                <source srcset="./images/desk/1x/card4-desk-1x.jpg 1x, ./images/desc/2x/card4-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)" />
+                                <source srcset="./images/tab/1x/card4-tab-1x.jpg 1x, ./images/tab/2x/card4-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mob/1x/card4-mob-1x.jpg 1x, ./images/mob/2x/card4-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/desk/1x/card4-desk-1x.jpg" alt="banking app" width="360" />
+                            </picture>
+
                             <p class="port-flow-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                 Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -326,7 +500,17 @@
                     </li>
                     <li class="port-tab">
                         <div class="port-flow">
-                            <img src="./images/card5.jpg" alt="Online Courses" width="360">
+
+                            <picture>
+                                <source srcset="./images/desk/1x/card5-desk-1x.jpg 1x, ./images/desc/2x/card5-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)" />
+                                <source srcset="./images/tab/1x/card5-tab-1x.jpg 1x, ./images/tab/2x/card5-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mob/1x/card5-mob-1x.jpg 1x, ./images/mob/2x/card5-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/desk/1x/card5-desk-1x.jpg" alt="banking app" width="360" />
+                            </picture>
+
                             <p class="port-flow-text">
                                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -339,7 +523,17 @@
                     </li>
                     <li class="port-tab">
                         <div class="port-flow">
-                            <img src="./images/card6.jpg" alt="Online Courses" width="360">
+
+                            <picture>
+                                <source srcset="./images/desk/1x/card6-desk-1x.jpg 1x, ./images/desc/2x/card6-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)" />
+                                <source srcset="./images/tab/1x/card6-tab-1x.jpg 1x, ./images/tab/2x/card6-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/mob/1x/card6-mob-1x.jpg 1x, ./images/mob/2x/card6-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images/desk/1x/card6-desk-1x.jpg" alt="banking app" width="360" />
+                            </picture>
+
                             <p class="port-flow-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                 Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -410,11 +604,10 @@
                     </button>
                 </form>
             </div>
-
         </div>
     </footer>
 
-    <div class="modal-bg" data-modal-bg>
+    <div class="modal-bg is-hidden" data-modal-bg>
         <div class="modal-container">
             <button type="button" class="modal-btn" data-close-modal>
                 <svg class="modal-close" width="8" height="8">
@@ -469,7 +662,7 @@
                             <svg class="checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#check"></use>
                             </svg>
-                        </span>
+                        </span class="checkbox-text">
                         I accept the terms and conditions of the
                         <a class="form-link" href="">Privacy Policy</a>
                     </label>
@@ -481,6 +674,7 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/menu.js"></script>
     
 </body>
 
