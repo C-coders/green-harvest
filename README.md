@@ -1,1 +1,1 @@
-# first group project green harvest
+# Green Harvest - First Group Project for HTML & CSS
