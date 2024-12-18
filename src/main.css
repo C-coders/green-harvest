@@ -36,75 +36,83 @@ body {
   letter-spacing: 0%;
   color: #fbfbfb;
 }
-.footer {
-  padding: 12.8rem 0;
-  border-top: 1px solid #eee;
+/* Footer styling */
+footer {
+  background-color: #6b2834; /* Dark red background */
+  color: #ffffff;           /* White text color */
+  text-align: center;       /* Center-align content */
+  padding: 20px 0;          /* Top and bottom padding */
+  font-family: Arial, sans-serif;
 }
 
-.grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
-}
-
-.logo-col {
+.footer-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Adds spacing between elements */
 }
 
-.footer-logo {
-  display: block;
-  margin-bottom: 3.2rem;
+.footer-content p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.social-links {
-  list-style: none;
-  display: flex;
-  gap: 2.4rem;
+.footer-bottom {
+  border-top: 1px solid #ffffff;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ddd;
 }
 
-.social-icon {
-  height: 2.4rem;
-  width: 2.4rem;
-}
-
-.copyright {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  color: #767676;
-  margin-top: auto;
-}
-
-.footer-heading {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 4rem;
-}
-
-.contacts {
-  font-style: normal;
-  font-size: 1.6rem;
-  line-height: 1.6;
-}
-
-.address {
-  margin-bottom: 2.4rem;
-}
-
-.footer-nav {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-}
-
-.footer-link:link,
-.footer-link:visited {
+.footer-link {
   text-decoration: none;
-  font-size: 1.6rem;
-  color: #767676;
-  transition: all 0.3s;
+  color: #ddd;
+  margin-right: 5px;
 }
 
-.footer-link:hover,
-.footer-link:active {
-  color: #555;
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* Tablet Responsive: 768px */
+@media screen and (max-width: 768px) {
+  .footer-content p {
+      font-size: 14px; /* Smaller text size for tablet */
+      margin: 3px 0;   /* Reduce margin for spacing */
+  }
+
+  .footer-container {
+      gap: 10px; /* Reduce spacing */
+  }
+
+  footer {
+      padding: 15px 10px; /* Smaller padding for tablet */
+  }
+}
+
+/* Mobile Responsive: 480px */
+@media screen and (max-width: 480px) {
+  .footer-content p {
+      font-size: 12px; /* Even smaller font size for mobile */
+  }
+
+  .footer-container {
+      gap: 8px; /* Reduce spacing further */
+  }
+
+  footer {
+      padding: 10px 5px; /* Compact padding for mobile */
+  }
+
+  .footer-bottom {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+  }
+
+  .footer-link {
+      display: block; /* Place links on new lines */
+      margin: 5px 0;
+  }
 }
