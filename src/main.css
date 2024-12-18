@@ -36,83 +36,94 @@ body {
   letter-spacing: 0%;
   color: #fbfbfb;
 }
-/* Footer styling */
-footer {
-  background-color: #6b2834; /* Dark red background */
-  color: #ffffff;           /* White text color */
-  text-align: center;       /* Center-align content */
-  padding: 20px 0;          /* Top and bottom padding */
+body {
   font-family: Arial, sans-serif;
-}
-
-.footer-container {
+  background-color: #6E2C3E; /* Koyu kırmızı arka plan */
+  color: white; /* Yazı rengi beyaz */
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 15px; /* Adds spacing between elements */
+  height: 100vh; /* Tam sayfa yüksekliği */
 }
 
-.footer-content p {
-  margin: 5px 0;
-  font-size: 16px;
-  font-weight: bold;
+.container {
+  text-align: center;
+  max-width: 800px; /* Maksimum genişlik */
+  width: 100%; /* Tam genişlik */
+  padding: 20px; /* İçerik için boşluk */
 }
 
-.footer-bottom {
-  border-top: 1px solid #ffffff;
-  padding-top: 10px;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #ddd;
+.header h1 {
+  font-size: 2.5em; /* Başlık boyutu */
+  margin: 0;
 }
 
-.footer-link {
-  text-decoration: none;
-  color: #ddd;
-  margin-right: 5px;
+.header p {
+  font-size: 1.2em; /* Açıklama yazısı boyutu */
+  margin: 10px 0 20px; /* Üstten ve alttan boşluk */
 }
 
-.footer-link:hover {
-  color: #ffffff;
+.links ul {
+  list-style: none; /* Noktaları kaldır */
+  padding: 0;
 }
 
-/* Tablet Responsive: 768px */
-@media screen and (max-width: 768px) {
-  .footer-content p {
-      font-size: 14px; /* Smaller text size for tablet */
-      margin: 3px 0;   /* Reduce margin for spacing */
+.links li {
+  margin: 10px 0; /* Her bir link için boşluk */
+}
+
+.links a {
+  color: white; /* Link rengi beyaz */
+  text-decoration: none; /* Alt çizgi yok */
+  font-size: 1.2em; /* Link yazı boyutu */
+}
+
+.contact p {
+  margin: 10px 0; /* İletişim bilgileri için boşluk */
+}
+
+footer {
+  margin-top: 20px; /* Alt bilgi için üstten boşluk */
+  font-size: 0.9em; /* Küçük yazı boyutu */
+}
+
+footer a {
+  color: white; /* Alt bilgi link rengi beyaz */
+  text-decoration: none; /* Alt çizgi yok */
+}
+
+/* Tablet için responsive ayarlar */
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 2em; /* Daha küçük başlık boyutu */
   }
 
-  .footer-container {
-      gap: 10px; /* Reduce spacing */
+  .header p {
+      font-size: 1em; /* Daha küçük açıklama yazısı boyutu */
+  }
+
+  .links a {
+      font-size: 1em; /* Daha küçük link boyutu */
+  }
+}
+
+/* Telefon için responsive ayarlar */
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 1.5em; /* Daha da küçük başlık boyutu */
+  }
+
+  .header p {
+      font-size: 0.9em; /* Daha da küçük açıklama yazısı boyutu */
+  }
+
+  .links a {
+      font-size: 0.9em; /* Daha da küçük link boyutu */
   }
 
   footer {
-      padding: 15px 10px; /* Smaller padding for tablet */
-  }
-}
-
-/* Mobile Responsive: 480px */
-@media screen and (max-width: 480px) {
-  .footer-content p {
-      font-size: 12px; /* Even smaller font size for mobile */
-  }
-
-  .footer-container {
-      gap: 8px; /* Reduce spacing further */
-  }
-
-  footer {
-      padding: 10px 5px; /* Compact padding for mobile */
-  }
-
-  .footer-bottom {
-      flex-direction: column; /* Stack items vertically */
-      text-align: center;
-  }
-
-  .footer-link {
-      display: block; /* Place links on new lines */
-      margin: 5px 0;
+      font-size: 0.8em; /* Alt bilgi için daha küçük yazı boyutu */
   }
 }
