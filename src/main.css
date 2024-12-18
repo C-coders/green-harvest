@@ -36,83 +36,101 @@ body {
   letter-spacing: 0%;
   color: #fbfbfb;
 }
-/* Footer Ana Stil */
-footer {
-  background-color: #6b2834; /* Arka plan rengi */
-  color: #ffffff; /* Yazı rengi */
-  padding: 2rem 4rem; /* İç boşluklar */
+.footer{
+  width: 1280px;
+  padding: 50px 100px 50px 100px;
+  height: 391px;
+}
+.menuft{
+display: flex;
+gap: 121px;
+}
+
+.menuft .sol{
+width: 50%;
+height: 103px;
+}
+.menuft .sol p{
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+color: #FBFBFB;
+width: 265px;
+}
+.sol .ustlogo a{
+  text-decoration: none;
+  color: #FBFBFB;
+  font-size: 18px;
+}
+.menuft .sag{
+display: flex;
+flex-direction: column;
+width: 260px;
+height: 146px;
+gap: 25px;
+}
+.menuft .sag a{
+font-size: 32px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: -0.015em;
+text-align: left;
+text-decoration: none;
+color: #FBFBFB;
+}
+.menuft address a{
+font-size: 18px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: -0.015em;
+text-align: left;
+text-decoration: none;
+color: #FBFBFB;
+}
+.menuft address p{
+font-size: 18px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: -0.015em;
+text-align: left;
+color: #FBFBFB;
+}
+.privacy{
+display: flex;
+width: 1080px;
+height: 20px;
+gap: 660px;
+position: relative;
+top: 130px;
+}
+.privacy .sol p a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: #FBFBFB80;
+}
+.privacy .sol p{
+  color: #FBFBFB80;
+}
+.privacy .sag p{
+width: 172px;
+height: 20px;
+font-size: 18px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: -0.015em;
+text-align: left;
+color: #FBFBFB80;
+}
+.ustlogo{
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-family: Arial, sans-serif;
+  gap: 5px;
+  align-items: center;
 }
-
-footer .footer-left,
-footer .footer-right {
-  flex: 1; /* Alanı eşit paylaştır */
-  min-width: 250px;
+logo-svg{
+  position: absolute;
 }
-
-footer .footer-left p,
-footer .footer-right p {
-  margin: 0.5rem 0; /* Paragrafların boşlukları */
-}
-
-footer .footer-left {
-  text-align: left; /* Sol taraf sola yaslanır */
-}
-
-footer .footer-right {
-  text-align: right; /* Sağ taraf sağa yaslanır */
-}
-
-footer hr {
-  border: none;
-  border-top: 1px solid #fff; /* İnce beyaz çizgi */
-  margin: 1rem 0; /* Çizgi üst-alt boşluk */
-}
-
-footer .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-/* Responsive Tablet Görünümü */
-@media (max-width: 768px) {
-  footer {
-    flex-direction: column; /* Sütun görünümü */
-    text-align: center;
-    padding: 2rem;
-  }
-
-  footer .footer-left,
-  footer .footer-right {
-    text-align: center;
-  }
-
-  footer .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-/* Responsive Mobil Görünümü */
-@media (max-width: 375px) {
-  footer {
-    padding: 1.5rem;
-  }
-
-  footer .footer-left,
-  footer .footer-right {
-    text-align: center;
-  }
-
-  footer .footer-bottom {
-    flex-direction: column;
-    font-size: 0.8rem;
-  }
-}
-
