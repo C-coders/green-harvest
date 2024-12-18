@@ -36,83 +36,83 @@ body {
   letter-spacing: 0%;
   color: #fbfbfb;
 }
-/* Footer styling */
+/* Footer Ana Stil */
 footer {
-  background-color: #6b2834; /* Dark red background */
-  color: #ffffff;           /* White text color */
-  text-align: center;       /* Center-align content */
-  padding: 20px 0;          /* Top and bottom padding */
+  background-color: #6b2834; /* Arka plan rengi */
+  color: #ffffff; /* Yazı rengi */
+  padding: 2rem 4rem; /* İç boşluklar */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-family: Arial, sans-serif;
 }
 
-.footer-container {
+footer .footer-left,
+footer .footer-right {
+  flex: 1; /* Alanı eşit paylaştır */
+  min-width: 250px;
+}
+
+footer .footer-left p,
+footer .footer-right p {
+  margin: 0.5rem 0; /* Paragrafların boşlukları */
+}
+
+footer .footer-left {
+  text-align: left; /* Sol taraf sola yaslanır */
+}
+
+footer .footer-right {
+  text-align: right; /* Sağ taraf sağa yaslanır */
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #fff; /* İnce beyaz çizgi */
+  margin: 1rem 0; /* Çizgi üst-alt boşluk */
+}
+
+footer .footer-bottom {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px; /* Adds spacing between elements */
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
-.footer-content p {
-  margin: 5px 0;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.footer-bottom {
-  border-top: 1px solid #ffffff;
-  padding-top: 10px;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #ddd;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: #ddd;
-  margin-right: 5px;
-}
-
-.footer-link:hover {
-  color: #ffffff;
-}
-
-/* Tablet Responsive: 768px */
-@media screen and (max-width: 768px) {
-  .footer-content p {
-      font-size: 14px; /* Smaller text size for tablet */
-      margin: 3px 0;   /* Reduce margin for spacing */
-  }
-
-  .footer-container {
-      gap: 10px; /* Reduce spacing */
-  }
-
+/* Responsive Tablet Görünümü */
+@media (max-width: 768px) {
   footer {
-      padding: 15px 10px; /* Smaller padding for tablet */
+    flex-direction: column; /* Sütun görünümü */
+    text-align: center;
+    padding: 2rem;
+  }
+
+  footer .footer-left,
+  footer .footer-right {
+    text-align: center;
+  }
+
+  footer .footer-bottom {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
-/* Mobile Responsive: 480px */
-@media screen and (max-width: 480px) {
-  .footer-content p {
-      font-size: 12px; /* Even smaller font size for mobile */
-  }
-
-  .footer-container {
-      gap: 8px; /* Reduce spacing further */
-  }
-
+/* Responsive Mobil Görünümü */
+@media (max-width: 375px) {
   footer {
-      padding: 10px 5px; /* Compact padding for mobile */
+    padding: 1.5rem;
   }
 
-  .footer-bottom {
-      flex-direction: column; /* Stack items vertically */
-      text-align: center;
+  footer .footer-left,
+  footer .footer-right {
+    text-align: center;
   }
 
-  .footer-link {
-      display: block; /* Place links on new lines */
-      margin: 5px 0;
+  footer .footer-bottom {
+    flex-direction: column;
+    font-size: 0.8rem;
   }
 }
+
