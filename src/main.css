@@ -36,35 +36,83 @@ body {
   letter-spacing: 0%;
   color: #fbfbfb;
 }
-/* footer css */
-.footer {
-  background-color: #5f264a; /* Footer için arka plan rengi */
-  color: #ffffff; /* Metin rengi */
-  padding: 20px 10px; /* İç boşluk */
-  display: flex;
-  justify-content: space-between; /* Sol ve sağ içerik arası boşluk */
-  flex-wrap: wrap; /* Mobil için alt alta geçiş */
+/* Footer styling */
+footer {
+  background-color: #6b2834; /* Dark red background */
+  color: #ffffff;           /* White text color */
+  text-align: center;       /* Center-align content */
+  padding: 20px 0;          /* Top and bottom padding */
+  font-family: Arial, sans-serif;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Adds spacing between elements */
 }
 
-.footer .social-links a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #fff;
+.footer-content p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.footer-privacy {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #ffffff33; /* Hafif çizgi */
+.footer-bottom {
+  border-top: 1px solid #ffffff;
   padding-top: 10px;
-}
-
-.footer-contact {
   margin-top: 10px;
   font-size: 14px;
+  color: #ddd;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ddd;
+  margin-right: 5px;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* Tablet Responsive: 768px */
+@media screen and (max-width: 768px) {
+  .footer-content p {
+      font-size: 14px; /* Smaller text size for tablet */
+      margin: 3px 0;   /* Reduce margin for spacing */
+  }
+
+  .footer-container {
+      gap: 10px; /* Reduce spacing */
+  }
+
+  footer {
+      padding: 15px 10px; /* Smaller padding for tablet */
+  }
+}
+
+/* Mobile Responsive: 480px */
+@media screen and (max-width: 480px) {
+  .footer-content p {
+      font-size: 12px; /* Even smaller font size for mobile */
+  }
+
+  .footer-container {
+      gap: 8px; /* Reduce spacing further */
+  }
+
+  footer {
+      padding: 10px 5px; /* Compact padding for mobile */
+  }
+
+  .footer-bottom {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+  }
+
+  .footer-link {
+      display: block; /* Place links on new lines */
+      margin: 5px 0;
+  }
 }
