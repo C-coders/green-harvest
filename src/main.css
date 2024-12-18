@@ -36,3 +36,35 @@ body {
   letter-spacing: 0%;
   color: #fbfbfb;
 }
+/* footer css */
+.footer {
+  background-color: #5f264a; /* Footer için arka plan rengi */
+  color: #ffffff; /* Metin rengi */
+  padding: 20px 10px; /* İç boşluk */
+  display: flex;
+  justify-content: space-between; /* Sol ve sağ içerik arası boşluk */
+  flex-wrap: wrap; /* Mobil için alt alta geçiş */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-privacy {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ffffff33; /* Hafif çizgi */
+  padding-top: 10px;
+}
+
+.footer-contact {
+  margin-top: 10px;
+  font-size: 14px;
+}
