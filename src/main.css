@@ -36,94 +36,77 @@ body {
   letter-spacing: 0%;
   color: #fbfbfb;
 }
-body {
-  font-family: Arial, sans-serif;
-  background-color: #6E2C3E; /* Koyu kırmızı arka plan */
-  color: white; /* Yazı rengi beyaz */
-  margin: 0;
+.footer {
+  background-color: #1B1B1B;
+  padding: 70px 0;
+  width: 100%;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-section p, 
+.footer-section a {
+  color: #B3B3B3;
+  text-decoration: none;
+  line-height: 1.8;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #4CAF50;
+}
+
+.footer-section ul {
+  list-style: none;
   padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.social-icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Tam sayfa yüksekliği */
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.container {
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.bottom-bar {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
   text-align: center;
-  max-width: 800px; /* Maksimum genişlik */
-  width: 100%; /* Tam genişlik */
-  padding: 20px; /* İçerik için boşluk */
+  color: #B3B3B3;
 }
 
-.header h1 {
-  font-size: 2.5em; /* Başlık boyutu */
-  margin: 0;
-}
-
-.header p {
-  font-size: 1.2em; /* Açıklama yazısı boyutu */
-  margin: 10px 0 20px; /* Üstten ve alttan boşluk */
-}
-
-.links ul {
-  list-style: none; /* Noktaları kaldır */
-  padding: 0;
-}
-
-.links li {
-  margin: 10px 0; /* Her bir link için boşluk */
-}
-
-.links a {
-  color: white; /* Link rengi beyaz */
-  text-decoration: none; /* Alt çizgi yok */
-  font-size: 1.2em; /* Link yazı boyutu */
-}
-
-.contact p {
-  margin: 10px 0; /* İletişim bilgileri için boşluk */
-}
-
-footer {
-  margin-top: 20px; /* Alt bilgi için üstten boşluk */
-  font-size: 0.9em; /* Küçük yazı boyutu */
-}
-
-footer a {
-  color: white; /* Alt bilgi link rengi beyaz */
-  text-decoration: none; /* Alt çizgi yok */
-}
-
-/* Tablet için responsive ayarlar */
-@media (max-width: 768px) {
-  .header h1 {
-      font-size: 2em; /* Daha küçük başlık boyutu */
-  }
-
-  .header p {
-      font-size: 1em; /* Daha küçük açıklama yazısı boyutu */
-  }
-
-  .links a {
-      font-size: 1em; /* Daha küçük link boyutu */
+@media screen and (max-width: 768px) {
+  .footer-container {
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Telefon için responsive ayarlar */
-@media (max-width: 480px) {
-  .header h1 {
-      font-size: 1.5em; /* Daha da küçük başlık boyutu */
-  }
-
-  .header p {
-      font-size: 0.9em; /* Daha da küçük açıklama yazısı boyutu */
-  }
-
-  .links a {
-      font-size: 0.9em; /* Daha da küçük link boyutu */
-  }
-
-  footer {
-      font-size: 0.8em; /* Alt bilgi için daha küçük yazı boyutu */
+@media screen and (max-width: 480px) {
+  .footer-container {
+      grid-template-columns: 1fr;
   }
 }
