@@ -48,6 +48,12 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Genel Stil */
+body {
+  font-family: 'Inter Tight', sans-serif; /* Yazı Tipi */
+  margin: 0;
+  padding: 0;
+}
 
 .footer {
   background-color: #79495B; /* Arka Plan Rengi */
@@ -74,9 +80,17 @@ body {
   margin-bottom: 15px;
 }
 
+.footer-title {
+  font-size: 32px; /* Title/Header 1 */
+  font-weight: 600; /* SemiBold */
+  line-height: 32px;
+  letter-spacing: -0.015em; /* -1.5% */
+  margin: 10px 0;
+}
+
 .footer-desc {
   font-size: 16px; /* Body 1 */
-  font-weight: bold;
+  font-weight: 700; /* Bold */
   line-height: 20px;
   margin-top: 10px;
 }
@@ -100,7 +114,7 @@ body {
 
 .footer-links a {
   font-size: 18px; /* Body 2 */
-  font-weight: semi-bold;
+  font-weight: 600; /* SemiBold */
   line-height: 20px;
   letter-spacing: -0.015em; /* -1.5% */
   text-decoration: none;
@@ -120,7 +134,7 @@ body {
 
 .footer-contact a {
   font-size: 16px; /* Body 1 */
-  font-weight: medium;
+  font-weight: 500; /* Medium */
   text-decoration: none;
   color: white;
   display: block;
@@ -129,8 +143,23 @@ body {
 
 .footer-address {
   font-size: 16px; /* Body 1 */
-  font-weight: medium;
+  font-weight: 500; /* Medium */
   line-height: 20px;
+}
+
+/* Alt Kısım */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Tasarım */
@@ -153,3 +182,4 @@ body {
     text-align: center;
   }
 }
+
