@@ -81,168 +81,112 @@ body {
   background-color: #7A3145;
   color: #fff;
 }
-
+/* Footer Styling */
 .footer {
+  background-color: #79495B;
+  color: white;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-container__top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 50px 40px;
+  margin-bottom: 20px;
 }
 
-.footer-left, .footer-center, .footer-right {
+.footer-container__top-left,
+.footer-container__top-right {
   flex: 1;
   min-width: 250px;
+  margin-bottom: 20px;
 }
 
-.footer-left {
-  max-width: 350px;
+.footer-container__top-left__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.footer-logo {
-  display: block;
-  margin-bottom: 30px;
-  width: 120px;
-}
-
-.footer-description {
-  margin: 0 0 20px;
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.footer-privacy {
-  font-size: 14px;
-  margin-top: 20px;
-}
-
-.footer-link {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
-.footer-center {
-  text-align: left;
-  padding-left: 20px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
+.footer-container__top-left__logo {
+  width: 150px;
   margin-bottom: 15px;
 }
 
-.footer-links a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.footer-right {
-  text-align: right;
-  padding-right: 20px;
-}
-
-.footer-phone {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.footer-address {
-  font-size: 16px;
+.footer-container__top-left__desc {
+  font-size: 14px;
   line-height: 1.6;
 }
 
-.footer-bottom {
-  flex-basis: 100%;
-  text-align: center;
-  margin-top: 20px;
+.footer-container__top-right__link,
+.footer-container__top-right__contact {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.footer-container__top-right__link-item,
+.footer-container__top-right__contact-item {
+  margin-bottom: 10px;
+}
+
+.footer-container__top-right__link-item a,
+.footer-container__top-right__contact-item a {
+  color: white;
+  text-decoration: none;
   font-size: 14px;
-  opacity: 0.8;
 }
 
-/* Responsive Design */
+.footer-container__top-right__link-item a:hover,
+.footer-container__top-right__contact-item a:hover {
+  text-decoration: underline;
+}
 
-/* For Tablets (768px and below) */
+.footer-container__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+
+.footer-container__bottom-left,
+.footer-container__bottom-right {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-container__bottom-left a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-container__bottom-left a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
-  .footer {
+  .footer-container__top {
     flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
+    align-items: center;
   }
 
-  .footer-left, .footer-center, .footer-right {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 0;
-  }
-
-  .footer-right {
+  .footer-container__top-left,
+  .footer-container__top-right {
+    align-items: center;
     text-align: center;
   }
 
-  .footer-logo {
-    margin: 0 auto 20px;
-    width: 100px;
-  }
-
-  .footer-links a {
-    font-size: 18px;
-  }
-
-  .footer-phone {
-    font-size: 16px;
-  }
-
-  .footer-address {
-    font-size: 14px;
-  }
-
-  .footer-description {
-    font-size: 14px;
-  }
-}
-
-/* For Mobile Phones (375px and below) */
-@media (max-width: 375px) {
-  .footer {
-    padding: 30px 15px;
-  }
-
-  .footer-left, .footer-center, .footer-right {
-    margin-bottom: 20px;
-  }
-
-  .footer-description {
-    font-size: 12px;
-  }
-
-  .footer-links a {
-    font-size: 16px;
-  }
-
-  .footer-phone {
-    font-size: 14px;
-  }
-
-  .footer-address {
-    font-size: 12px;
-  }
-
-  .footer-privacy {
-    font-size: 12px;
-  }
-
-  .footer-bottom {
-    font-size: 12px;
+  .footer-container__bottom {
+    flex-direction: column;
+    align-items: center;
   }
 }
