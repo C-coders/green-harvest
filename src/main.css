@@ -43,8 +43,20 @@ button {
   font-weight: 600;
   line-height: 20px;
   letter-spacing: -0.015em;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: #d4bfc4;
+  color: #7a3145;
+  border: 1px solid #d4bfc4;
+}
+
+button:focus {
+  background-color: #fbfbfb;
+  color: #7a3145;
+  border: 1px solid #7a3145;
+}
 .your-order {
   background-color: #576f35;
   height: 1, 036px;
@@ -68,6 +80,10 @@ button {
 .your-order-top-titles > h2 {
   width: 751px;
   height: 128px;
+}
+
+.harvest-text {
+  color: #d4bfc4;
 }
 
 .your-order-top-titles > p {
@@ -115,7 +131,6 @@ button {
 .contact-form ::placeholder {
   color: #141414;
   font-weight: 500;
-  padding-left: 14px;
 }
 
 .form-input > input {
@@ -123,6 +138,7 @@ button {
   border: 1px solid #858585;
   width: 428px;
   height: 52px;
+  padding-left: 14px;
 }
 
 .form-textarea > textarea {
@@ -132,8 +148,18 @@ button {
   width: 428px;
   height: 96px;
   padding-top: 16px;
-  padding-left: 15px;
   font-weight: 500;
+  padding-left: 14px;
+}
+
+input:valid,
+textarea:valid {
+  border-color: #3cbc81;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: #e74a3b;
 }
 
 .send-button {
@@ -167,6 +193,13 @@ button {
   line-height: 20px;
   color: #d4bfc4;
   margin-bottom: 16px;
+}
+
+.social-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
 }
 
 .social-link {
