@@ -36,12 +36,18 @@ body {
   letter-spacing: 0%;
   color: #fbfbfb;
 }
-/* Footer Styling */
+/* Genel Stil */
+body {
+  font-family: 'Inter Tight', sans-serif; /* Yazı tipi */
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer */
 .footer {
   background-color: #79495B;
   color: white;
   padding: 40px 0;
-  font-family: 'Arial', sans-serif;
 }
 
 .footer-container {
@@ -50,6 +56,7 @@ body {
   padding: 0 20px;
 }
 
+/* Üst Bölüm */
 .footer-container__top {
   display: flex;
   flex-wrap: wrap;
@@ -64,39 +71,30 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-container__top-left__container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
+/* Logo ve Açıklama */
 .footer-container__top-left__logo {
   width: 150px;
   margin-bottom: 15px;
 }
 
 .footer-container__top-left__desc {
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px; /* Body 1 */
+  font-weight: bold; /* Body 1 */
+  line-height: 20px;
+  margin-top: 10px;
 }
 
-.footer-container__top-right__link,
-.footer-container__top-right__contact {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
-}
-
-.footer-container__top-right__link-item,
-.footer-container__top-right__contact-item {
-  margin-bottom: 10px;
-}
-
+/* Başlıklar */
 .footer-container__top-right__link-item a,
 .footer-container__top-right__contact-item a {
-  color: white;
+  font-size: 18px; /* Body 2 */
+  font-weight: semi-bold;
+  line-height: 20px;
+  letter-spacing: -0.015em; /* -1.5% */
   text-decoration: none;
-  font-size: 14px;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .footer-container__top-right__link-item a:hover,
@@ -104,6 +102,14 @@ body {
   text-decoration: underline;
 }
 
+/* Adres ve Telefon */
+.footer-container__top-right__contact-item {
+  font-size: 16px; /* Body 1 */
+  font-weight: medium;
+  line-height: 20px;
+}
+
+/* Alt Bölüm */
 .footer-container__bottom {
   display: flex;
   flex-wrap: wrap;
@@ -112,13 +118,9 @@ body {
   padding-top: 20px;
 }
 
-.footer-container__bottom-left,
-.footer-container__bottom-right {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
 .footer-container__bottom-left a {
+  font-size: 16px; /* Body 1 */
+  font-weight: bold;
   color: white;
   text-decoration: none;
   margin-right: 10px;
@@ -126,6 +128,11 @@ body {
 
 .footer-container__bottom-left a:hover {
   text-decoration: underline;
+}
+
+.footer-container__bottom-right {
+  font-size: 14px;
+  font-weight: medium;
 }
 
 @media (max-width: 768px) {
