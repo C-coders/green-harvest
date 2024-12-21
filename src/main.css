@@ -1,6 +1,7 @@
 *
 {
   margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3
@@ -85,6 +86,43 @@ body
   gap: 20px;
 }
 
+.navbar-button
+{
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #FBFBFB;
+  opacity: 0px;
+  text-align: center;
+  background-color: transparent;
+  color: #FBFBFB;
+}
+
+.button_1
+{
+  width: 118px;
+}
+
+.button_2
+{
+  width: 104px;
+}
+
+.button_3
+{
+  width: 83px;
+}
+
+.shop-button
+{
+  width: 157px;
+  height: 52px;
+  border-radius: 30px;
+  padding: 16px 32px 16px 32px;
+  color: #FBFBFB;
+  background-color: #7A3145;
+  border: none;
+}
+
 .hero-container
 {
   display: flex;
@@ -114,6 +152,10 @@ body
 {
   margin-top: 232px;
   margin-left: 100px;
+
+  width: 502px;
+  height: 304px;
+
   color: #FBFBFB;
 }
 
@@ -183,6 +225,35 @@ body
     background-position: center;
     background-size: cover;
   }
+
+  .site-title
+  {
+    margin-top: 120px;
+    margin-left: 32px;
+
+    width: 704px;
+    height: 228px;
+
+    color: #FBFBFB;
+  }
+  
+  .hero-uvp-description
+  {
+    margin-top: 24px;
+    margin-right: 133px;
+    margin-bottom: 52px;
+    margin-left: 32px;
+  
+    width: 603px;
+    height: 60px;
+  
+    font-family: "Inter Tight", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    /* 600 olunca Figma'daki ile aynı şekle geliyor, ancak bu sefer görünüm bozuluyor */
+    line-height: 20px;
+    color: #FBFBFB;
+  }
 }
 
 @media (max-width: 767px)
@@ -233,5 +304,36 @@ body
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  .site-title
+  {
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    width: 335px;
+    height: 208px;
+    
+    font-size: 52px;
+    line-height: 52px;
+
+    color: #FBFBFB;
+  }
+
+  .hero-uvp-description
+  {
+    margin: 20px 20px 40px 20px;
+    
+    width: 335px;
+    height: 100px;
+    
+    font-family: "Inter Tight", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    /* 600 olunca Figma'daki ile aynı şekle geliyor, ancak bu sefer görünüm bozuluyor */
+    line-height: 20px;
+    color: #FBFBFB;
   }
 }
