@@ -288,7 +288,8 @@ body {
 
   .shop-now:hover,
   .shop-now:focus {
-    background-color: #622133;
+    background-color: #D4BFC4;
+    color: #7A3145;
   }
 }
 
