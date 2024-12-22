@@ -337,7 +337,7 @@ hero .container {
       rgba(20, 20, 20, 0.2),
       rgba(20, 20, 20, 0.2)
     ),
-    url(/img/images-hero/mob-hero-1x.jpg);
+    url(./img/images-hero/mob-hero-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -350,7 +350,7 @@ hero .container {
         rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)
       ),
-      url(/img/images-hero/mob-hero-2x.jpg);
+      url(./img/images-hero/mob-hero-2x.jpg);
   }
 }
 
@@ -381,7 +381,7 @@ hero .container {
         rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)
       ),
-      url(/img/images-hero/tab-hero-1x.jpg);
+      url(./img/images-hero/tab-hero-1x.jpg);
     min-height: 539px;
     min-width: 768px;
   }
@@ -392,7 +392,7 @@ hero .container {
           rgba(20, 20, 20, 0.2),
           rgba(20, 20, 20, 0.2)
         ),
-        url(/img/images-hero/tab-hero-2x.jpg);
+        url(./img/images-hero/tab-hero-2x.jpg);
     }
   }
 }
@@ -425,7 +425,7 @@ hero .container {
         rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)
       ),
-      url(/img/images-hero/desk-hero-1x.jpg);
+      url(./img/images-hero/desk-hero-1x.jpg);
     max-width: 650px;
     min-height: 800px;
   }
@@ -436,7 +436,7 @@ hero .container {
           rgba(20, 20, 20, 0.2),
           rgba(20, 20, 20, 0.2)
         ),
-        url(/img/images-hero/desk-hero-2x.jpg);
+        url(./img/images-hero/desk-hero-2x.jpg);
     }
   }
 }
